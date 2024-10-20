@@ -58,8 +58,8 @@ def binary_searh(letters, target):
     n = len(letters)
     start, end = 0, n-1
     
-    if target >= letters[end]:
-        return letters[0]
+    # if target >= letters[end]:
+    #     return letters[start]
     while(start<=end):
         mid = (start + end)//2
         if(letters[mid] == target):
@@ -69,7 +69,7 @@ def binary_searh(letters, target):
         else:
             start = mid +1
         
-    return letters[start]
+    return letters[0]
 
 print(binary_searh(lst, target))
-print(binary_searh(letters, target2))
+# print(binary_searh(letters, target2))

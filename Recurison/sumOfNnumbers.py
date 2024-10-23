@@ -1,7 +1,12 @@
+import sys
+sys.getrecursionlimit(10000) ##to set recursion limit
+
 def sum_numbers(n):
-    if n==1:
+    if n==1: ##base case
         return 1
-    return n + sum_numbers(n-1)
+    smallAns = sum_numbers(n-1) ##Assume2
+    ans = n+smallAns
+    return ans
 print(sum_numbers(5))
 
 ##Regular

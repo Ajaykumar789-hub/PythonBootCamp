@@ -11,4 +11,13 @@ def num_Ofdigits(n):
     ans = 1 + smallans ##step3
     return ans
     
+def num_digits(n):
+    if n == 0 or (n>=1 and n<=9):
+        return 1
+    
+    smallnum = n//10
+    smallans = num_Ofdigits(smallnum)
+
+    return 1 + smallans
+print(num_digits(9))
     

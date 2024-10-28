@@ -7,6 +7,7 @@ def return_list_indices(l1,x, index):
     sl = return_list_indices(l1,x,index+1)
     if l1[index] == x:
         sl.insert(0,index)
+
     return sl
 
 anslist = return_list_indices([1,2,4,5,2,6],2,0)

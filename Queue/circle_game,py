@@ -1,0 +1,11 @@
+from collections import deque
+
+def circle_game(n,k):
+    queue = deque(range(1,n))
+
+    while len(queue) > 1:
+        queue.rotate(k-1)
+        queue.popleft()
+    return queue[0]
+
+print(circle_game(5,3))

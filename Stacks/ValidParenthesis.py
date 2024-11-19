@@ -20,5 +20,5 @@ def is_Balenced(S):
             # If the character is not a brace, return False (invalid input)
             return False
     return len(stack) == 0
-s = "{}()"
+s = "({})"
 print(is_Balenced(s))

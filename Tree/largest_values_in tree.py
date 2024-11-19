@@ -18,3 +18,4 @@ def largest_values_in_tree(root):
                 queue.append(child)
         result.append(max_val)
     return result
+print(largest_values_in_tree(root1))

@@ -1,6 +1,6 @@
 # Tree is Hierachical Data structure consisting of nodes which are connected by edges
 
-# Tree is Non linear DS
+# Tree is Non linear Data structure
 
 # i. Tree
 # ii. Binary Tree

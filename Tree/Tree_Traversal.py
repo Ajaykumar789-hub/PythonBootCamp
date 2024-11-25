@@ -3,11 +3,11 @@ from collections import deque
 
 root1, root2, root3 = predefined_generic_tree_inputs()
 
-def tree_Traversal(root):
-    if root == None:
+def tree_Traversal(node):
+    if node == None:
         return []
     result = []
-    queue = deque([root])
+    queue = deque([node])
     while queue:
         n = len(queue)
         level_nodes = []        
@@ -22,3 +22,5 @@ def tree_Traversal(root):
         result.append(level_nodes)
 
     return result
+
+print(tree_Traversal(root1))

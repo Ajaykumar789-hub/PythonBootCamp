@@ -62,9 +62,9 @@ def binary_searh(letters, target):
     #     return letters[start]
     while(start<=end):
         mid = (start + end)//2
-        if(letters[mid] == target):
+        if letters[mid] == target:
             return mid
-        elif(letters[mid] > target):
+        elif letters[mid] > target:
             end = mid -1
         else:
             start = mid +1

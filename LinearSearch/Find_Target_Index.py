@@ -11,4 +11,16 @@ def linear_search(arr, target):
 
 print(linear_search(lst, target=target))
 
+lst2 = [1,2,3,3,4,5]
+tr = 3
+
+def last_occ(lst, target):
+    n = len(lst)
+    for i in range(n-1, 0, -1):
+        if lst[i] == target:
+            return i
+    return -1
+
+print(last_occ(lst2, tr))
+
 
